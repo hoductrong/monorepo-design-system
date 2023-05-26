@@ -1,0 +1,19 @@
+{
+  "name": "eslint-config-myorg",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.js",
+  "license": "unlicensed",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint-plugin-prettier": "^4.2.1",
+    "@typescript-eslint/eslint-plugin": "^5.33.0",
+    "@typescript-eslint/parser": "^5.33.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-config-turbo": "^1.9.9",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-import": "^2.23.4",
+    "@myorg/config-prettier": "*"
+  }
+}
