@@ -1,0 +1,41 @@
+{
+  "name": "@myorg/core",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "./dist/core.js",
+  "module": "./dist/core.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    "./src": "./src/index.ts",
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/core.cjs",
+      "import": "./dist/core.js"
+    }
+  },
+  "sideEffects": false,
+  "license": "MIT",
+  "files": [
+    "dist/**"
+  ],
+  "scripts": {
+    "build": "vite build && tsc --declaration --emitDeclarationOnly --outDir dist",
+    "dev": "vite build --watch",
+    "lint": "eslint \"src/**/*.ts*\"",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
+  },
+  "devDependencies": {
+    "@myorg/config-tsconfig": "workspace:*",
+    "@types/react": "^18.0.9",
+    "@types/react-dom": "^18.0.4",
+    "eslint": "^8.15.0",
+    "eslint-config-myorg": "workspace:*",
+    "react": "^18.1.0",
+    "typescript": "^4.5.3",
+    "@vitejs/plugin-react-swc": "^3.2.0",
+    "vite": "^4.1.2"
+  },
+  "publishConfig": {
+    "access": "restricted"
+  }
+}
