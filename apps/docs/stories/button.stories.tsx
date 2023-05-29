@@ -1,4 +1,3 @@
-import React from 'react';
 import { Button } from '@myorg/core/src';
 import type { Story } from '@storybook/react/types-6-0';
 

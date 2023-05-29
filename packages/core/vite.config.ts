@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react-swc';
+import dts from 'vite-plugin-dts'
 
 export default defineConfig({
   build: {
@@ -13,6 +14,8 @@ export default defineConfig({
     sourcemap: true,
     target: 'es2020',
   },
-  plugins: [react()],
+  plugins: [react(),dts({
+    skipDiagnostics: false,
+  })],
   publicDir: false,
 });

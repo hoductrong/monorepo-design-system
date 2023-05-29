@@ -1,0 +1,5 @@
+{
+  "extends": "@myorg/config-tsconfig/react-library.json",
+  "include": ["stories"],
+  "exclude": ["storybook-static", ".storybook", "node_modules"]
+}
